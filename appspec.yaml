@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:183686979203:task-definition/aws-hello-world-rest-api:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:976430960058:task-definition/aws-spring-boot-mvc:1"
         LoadBalancerInfo:
-          ContainerName: "spring-boot-mvc"
+          ContainerName: "aws-spring-boot-mvc"
           ContainerPort: "1500"
         PlatformVersion: "LATEST"
